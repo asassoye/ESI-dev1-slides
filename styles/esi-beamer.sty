@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  MIT License
+%
+%  Copyright (c) 2019 Andrew SASSOYE <andrew@sassoye.be>
+%
+%  Permission is hereby granted, free of charge, to any person obtaining a copy
+%  of this software and associated documentation files (the "Software"), to deal
+%  in the Software without restriction, including without limitation the rights
+%  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%  copies of the Software, and to permit persons to whom the Software is
+%  furnished to do so, subject to the following conditions:
+%
+%  The above copyright notice and this permission notice shall be included in all
+%  copies or substantial portions of the Software.
+%
+%  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%  SOFTWARE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{esi-beamer}[2019/10/31 Andrew SASSOYE v1.0]
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[french]{babel}
+\RequirePackage{graphicx}
+
+\usetheme[compress]{Berlin}
+\usefonttheme{structurebold}
+
+\institute{HE2B - \'Ecole Sup\'erieure d'Informatique}
+\titlegraphic{
+    \includegraphics[width=3cm]{./styles/images/esi-logo}
+}
+
+%%% Couleurs
+\definecolor{esi}{RGB}{73, 143, 200}
+\definecolor{pomegranate}{RGB}{192, 57, 43}
+\definecolor{concrete}{RGB}{149, 165, 166}
+
+\setbeamercolor{palette primary}{bg=esi}
+\setbeamercolor{palette secondary}{bg=esi!80!black}
+\setbeamercolor{palette tertiary}{bg=black}
+
+\setbeamercolor{navigation symbols}{fg=esi!80!white}
+\setbeamercolor{navigation symbols dimmed}{fg=esi!40!white}
+
+\setbeamercolor{section in toc}{fg=esi!80!black}
+\setbeamercolor{subsection in toc}{fg=esi!80!black}
+
+\setbeamercolor{itemize item}{fg=esi!80!black}
+\setbeamercolor{itemize subitem}{fg=esi}
+\setbeamercolor{itemize subsubitem}{fg=esi}
+\setbeamercolor{item projected}{bg=esi!80!black}
+
+\setbeamercolor{block title}{bg=esi!80!black}
+
+\setbeamercolor{block title alerted}{bg=pomegranate}
+\setbeamercolor{block title example}{bg=concrete}
+
+%% Footer style
+\setbeamertemplate{footline}{%
+    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+    \end{beamercolorbox}
+
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+    leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+        \leavevmode{\usebeamerfont{author in head/foot}\insertshortauthor}%
+        \hfill%
+        {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortinstitute}%
+    \end{beamercolorbox}%
+
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+    leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    {\usebeamerfont{title in head/foot}
+    \insertshorttitle
+    \hspace*{1em}
+    \raisebox{-.2\height}{
+        \includegraphics[height=1em]{./styles/images/by-nc-sa}
+    }
+    \hfill
+    \insertframenumber
+
+    }%
+    \end{beamercolorbox}%
+
+    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+\end{beamercolorbox}
+}
+
+\AtBeginSection{
+    \begin{frame}{Table des mati\`eres}
+        \tableofcontents[
+        currentsection,
+        subsectionstyle=show/show/hide
+        ]
+    \end{frame}
+}
