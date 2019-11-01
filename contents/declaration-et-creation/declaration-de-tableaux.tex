@@ -1,5 +1,24 @@
-\begin{frame}[containsverbatim]
-    \begin{lstlisting}[language=Java, frame=single]
-    int t[];
-    \end{lstlisting}
+\begin{frame}{Forme de base}
+    La déclaration d'un tableau se fait comme la déclaration d'une variable suivi de crochets
+    \lstinputlisting[firstline=3, lastline=3, firstnumber=3]{contents/declaration-et-creation/java/Declaration.java}
+
+    \begin{exampleblock}{Types}
+        En Java, les éléments d'un tableau peuvent être de n'importe quel type primitif.
+    \end{exampleblock}
+
+    \lstinputlisting[firstline=4, lastline=4, firstnumber=4]{contents/declaration-et-creation/java/Declaration.java}
+
+\end{frame}
+
+\begin{frame}{Variantes}
+    On peut également mettre les crochets avant le nom
+    \lstinputlisting[firstline=5, lastline=5, firstnumber=5]{contents/declaration-et-creation/java/Declaration.java}
+    Ceci permet de pouvoir déclarer plusieurs tableaux sur une ligne
+    \lstinputlisting[firstline=6, lastline=6, firstnumber=6]{contents/declaration-et-creation/java/Declaration.java}
+\end{frame}
+
+\begin{frame}{Elements de type 'objet'}
+    Si l'on a défini une classe de type $Point$, nous pouvons également déclarer un tableau de points.
+
+    \lstinputlisting[firstline=7, lastline=7, firstnumber=7, morekeywords=Point]{contents/declaration-et-creation/java/Declaration.java}
 \end{frame}

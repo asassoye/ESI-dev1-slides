@@ -24,7 +24,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesPackage{esi-beamer}[2019/10/31 Andrew SASSOYE v1.0]
+\ProvidesPackage{./styles/esi-beamer}[2019/11/01 Andrew SASSOYE v1.1.0]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
@@ -44,6 +44,8 @@
 \definecolor{esi}{RGB}{73, 143, 200}
 \definecolor{pomegranate}{RGB}{192, 57, 43}
 \definecolor{concrete}{RGB}{149, 165, 166}
+\definecolor{wisteria}{RGB}{142, 68, 173}
+\definecolor{greenSea}{RGB}{22, 160, 133}
 
 \setbeamercolor{palette primary}{bg=esi}
 \setbeamercolor{palette secondary}{bg=esi!80!black}
@@ -95,6 +97,7 @@
 \end{beamercolorbox}
 }
 
+%% Table des matieres a chaque debut de section
 \AtBeginSection{
     \begin{frame}{Table des mati\`eres}
         \tableofcontents[
@@ -102,4 +105,25 @@
         subsectionstyle=show/show/hide
         ]
     \end{frame}
+}
+
+%% Configuration de LST
+\lstset{
+backgroundcolor=\color{white},
+basicstyle=\tiny,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=t,
+commentstyle=\color{concrete},
+escapeinside={\%*}{*)},
+frame=single,
+keepspaces=true,
+keywordstyle=\color{wisteria},
+language=Java,
+numbers=left,
+numbersep=6pt,
+numberstyle=\tiny\color{concrete},
+rulecolor=\color{black},
+stringstyle=\color{esi!80!black},
+title=\tiny\color{concrete}\lstname
 }
