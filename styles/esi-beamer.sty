@@ -24,7 +24,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesPackage{./styles/esi-beamer}[2019/11/01 Andrew SASSOYE v1.1.0]
+\ProvidesPackage{./styles/esi-beamer}[2019/11/01 Andrew SASSOYE v1.2.0]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
@@ -97,14 +97,40 @@
 \end{beamercolorbox}
 }
 
+%% Part page style
+\setbeamertemplate{part page}{
+\begin{beamercolorbox}[wd=\paperwidth, center, ht=.50\paperheight, dp=.50\paperheight]{part title}
+    Partie \insertpartnumber\\
+    \usebeamerfont{part title}\insertpart\par
+\end{beamercolorbox}
+}
+
+%% Part page style
+\setbeamertemplate{section page}{
+\begin{beamercolorbox}[wd=.9\paperwidth, center, sep=.5cm]{section title}
+    \usebeamerfont{part title}\insertsection
+\end{beamercolorbox}
+}
+
 %% Table des matieres a chaque debut de section
 \AtBeginSection{
-    \begin{frame}{Table des mati\`eres}
+\begin{frame}
+    \sectionpage
         \tableofcontents[
         currentsection,
+        sectionstyle=show/hide,
         subsectionstyle=show/show/hide
         ]
     \end{frame}
+}
+
+%% Page de partie
+\AtBeginPart{
+\frame[plain]{\partpage}
+\begin{frame}[allowframebreaks]{Table des mati\`eres}
+    \tableofcontents[
+    ]
+\end{frame}
 }
 
 %% Configuration de LST
