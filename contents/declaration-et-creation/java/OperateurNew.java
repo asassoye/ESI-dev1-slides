@@ -6,7 +6,7 @@ public class OperateurNew {
 
         System.out.print("Quelle est la taille voulue? ");
         int n = clavier.nextInt();
-        int t[] = new int [n]; // Creer un tableau d'entiers de taille n
+        int[] t = new int[n]; // Creer un tableau d'entiers de taille n
 
         System.out.printf("La taille du tableau est de %d\n", t.length);
     }
