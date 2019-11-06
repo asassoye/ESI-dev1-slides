@@ -24,13 +24,14 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesPackage{./styles/esi-beamer}[2019/11/01 Andrew SASSOYE v1.2.0]
+\ProvidesPackage{esi-beamer}[2019/11/01 Andrew SASSOYE v1.2.1]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[french]{babel}
 \RequirePackage{graphicx}
 \RequirePackage{listings}
+\RequirePackage{import}
 
 \usetheme[compress]{Berlin}
 \usefonttheme{structurebold}
@@ -150,6 +151,5 @@ numbers=left,
 numbersep=6pt,
 numberstyle=\tiny\color{concrete},
 rulecolor=\color{black},
-stringstyle=\color{esi!80!black},
-title=\tiny\color{concrete}\lstname
+stringstyle=\color{esi!80!black}
 }
