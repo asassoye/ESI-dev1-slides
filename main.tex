@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[utf8]{beamer}
 
 \usepackage{./styles/esi-beamer}
 
@@ -35,11 +35,18 @@
 
     \end{frame}
 
+    \begin{frame}{Références}
+        \begin{itemize}
+            \item \textbf{Delannoy}, Claude. 2017. \textit{Programmer en Java: Couvre Java~9}, 10e éd. Paris : Eyrolles, 984 p.
+            %\item \textbf{Delannoy}, Claude. 2017. \textit{Exercices en Java}, 4e éd. Paris : Eyrolles. 346 p.
+        \end{itemize}
+    \end{frame}
+
     \part{Théorie}
 
     \section{Déclaration et création}\label{sec:declaration-et-creation}
         \subsection{Introduction}\label{subsec:introduction}
-    \import{contents/declaration-et-creation/}{/introduction}
+    \import{contents/declaration-et-creation/}{introduction}
         \subsection{Déclaration de tableaux}\label{subsec:declaration-de-tableaux}
     \import{contents/declaration-et-creation/}{declaration-de-tableaux.tex}
         \subsection{Création de tableaux}\label{subsec:creation-de-tableaux}
@@ -60,5 +67,4 @@
         \subsection{For\ldots each}\label{subsec:for-each}
 
     \part{Exercices}
-
 \end{document}
