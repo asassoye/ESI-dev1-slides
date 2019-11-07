@@ -9,21 +9,31 @@ $ make pdf
 ## Structure du projet
 ```
 .
-├── main.tex
 ├── LICENSE
 ├── Makefile
+├── README.md
 ├── contents
-│   └── declaration-et-creation
-│       ├── introduction.tex
-│       ├── declaration-de-tableaux.tex
-│       ├── creation-de-tableaux.tex
-│       ├── images
-│       │   └── objects-tenElementArray.pdf
-│       └── java
-│           ├── Declaration.java
-│           ├── Initialiseur.java
-│           ├── OperateurNew.java
-│           └── SansInitialiseur.java
+│   ├── exercices
+│   │   └── exercices-du-syllabus.tex
+│   ├── exercices.tex
+│   ├── theorie
+│   │   ├── declaration-et-creation
+│   │   │   ├── creation-de-tableaux.tex
+│   │   │   ├── declaration-de-tableaux.tex
+│   │   │   ├── images
+│   │   │   │   ├── objects-tenElementArray.gif
+│   │   │   │   └── objects-tenElementArray.pdf
+│   │   │   ├── introduction.tex
+│   │   │   └── java
+│   │   │       ├── Declaration.java
+│   │   │       ├── Initialiseur.java
+│   │   │       ├── OperateurNew.java
+│   │   │       └── SansInitialiseur.java
+│   │   ├── declaration-et-creation.tex
+│   │   ├── tableaux-a-plusieurs-indices.tex
+│   │   └── utilisation.tex
+│   └── theorie.tex
+├── main.tex
 └── styles
     ├── esi-beamer.sty
     └── images
@@ -31,5 +41,7 @@ $ make pdf
         ├── by.pdf
         ├── cc.pdf
         ├── esi-logo.pdf
+        ├── preview1.png
+        ├── preview2.png
         └── sa.pdf
 ```
