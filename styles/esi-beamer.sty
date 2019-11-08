@@ -24,7 +24,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesPackage{esi-beamer}[2019/11/01 Andrew SASSOYE v1.2.1]
+\ProvidesPackage{esi-beamer}[2019/11/07 Andrew SASSOYE v1.2.2]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
@@ -127,6 +127,8 @@
 
 %% Page de partie
 \AtBeginPart{
+\beamer@tocsectionnumber=0\relax
+\setcounter{section}{0}
 \frame[plain]{\partpage}
 \begin{frame}[allowframebreaks]{Table des mati\`eres}
     \tableofcontents[
