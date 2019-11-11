@@ -4,6 +4,6 @@ public class Declaration {
         double[] doubleArray;
         int[] a1, a2;
         int a, b, c[];
-        Point[] points;
+        String[] chaine;
     }
 }
