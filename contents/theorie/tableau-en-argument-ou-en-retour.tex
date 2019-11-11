@@ -1,0 +1,18 @@
+\begin{frame}{Tableau en argument}
+    Reprenons l'exemple précédent. Nous pouvons crée une méthode qui affiche systematiquement tout les noms du tableau
+    \lstinputlisting[firstline=2, lastline=6, firstnumber=2]{tableau-en-argument-ou-en-retour/java/TableauEnArgument.java}
+
+    \begin{alertblock}{Référence au tableau}
+        En réalité, on ne transmets pas une copie du tableau à la méthode. On transmet la référence au tableau.
+        Concrètement, si on modifie une valeur du tableau dans la méthode,
+        le tableau original aura aussi été soumis à la modification.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Tableau en retour}
+    Comme on peut référencer un tableau en argument d'une méthode,
+    nous pouvons aussi renvoyer une référence vers un tableau en retour d'une méthode.
+    \lstinputlisting[firstline=2, lastline=4, firstnumber=4]{tableau-en-argument-ou-en-retour/java/TableauEnRetour.java}
+
+    \center\tiny On est d'accord, cette méthode ne sert à rien
+\end{frame}
