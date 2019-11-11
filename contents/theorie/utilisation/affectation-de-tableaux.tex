@@ -1,0 +1,28 @@
+\begin{frame}{Affectation d'une valeur}
+    Prenons cet exemple
+    \lstinputlisting[firstline=5, lastline=8, firstnumber=5]{java/Affectation.java}
+    Cela donne
+    \lstinputlisting[firstline=1, lastline=1, firstnumber=1, language=bash]{java/Affectation.txt}
+\end{frame}
+
+\begin{frame}{Affectation d'un tableau}
+    Faisons la même chose avec un tableau et modifions une valeur de la copie du tableau
+    \lstinputlisting[firstline=10, lastline=14, firstnumber=10]{java/Affectation.java}
+    Cela donne
+    \lstinputlisting[firstline=2, lastline=3, firstnumber=2, language=bash]{java/Affectation.txt}
+
+\end{frame}
+
+\begin{frame}{Référence d'un tableau}
+    Nous avons les mêmes valeurs car quand on crée un tableau et qu'on l'affecte a une variable,
+    nous donnons en réalité la référence vers le tableau.
+
+    \begin{exampleblock}{Arrays.toString()}
+        Nous ne pouvons par conséquent pas afficher immediatement le tableau,
+        nous ne ferions qu'afficher la référence du tableau.
+        La méthode $Arrays.toString()$ permet de créer facilement une chaine de caractère à partir d'un tableau.
+
+        \tiny\center Noubliez-pas d'importer la classe adéquate!
+        \lstinputlisting[firstline=1, lastline=1, firstnumber=1]{java/Affectation.java}
+    \end{exampleblock}
+\end{frame}
