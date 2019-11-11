@@ -9,12 +9,15 @@ $ make pdf
 ## Structure du projet
 ```
 .
-├── LICENSE
-├── Makefile
-├── README.md
 ├── contents
 │   ├── exercices
-│   │   └── exercices-du-syllabus.tex
+│   │   ├── declaration-et-creation.tex
+│   │   ├── java
+│   │   │   ├── AlgorithmeInitialisation.java
+│   │   │   └── SyllabusExercice99.java
+│   │   ├── tableau-en-argument-ou-en-retour.tex
+│   │   ├── tableaux-a-plusieurs-indices.tex
+│   │   └── utilisation.tex
 │   ├── exercices.tex
 │   ├── theorie
 │   │   ├── declaration-et-creation
@@ -30,15 +33,38 @@ $ make pdf
 │   │   │       ├── OperateurNew.java
 │   │   │       └── SansInitialiseur.java
 │   │   ├── declaration-et-creation.tex
+│   │   ├── tableau-en-argument-ou-en-retour
+│   │   │   └── java
+│   │   │       ├── TableauEnArgument.java
+│   │   │       └── TableauEnRetour.java
+│   │   ├── tableau-en-argument-ou-en-retour.tex
 │   │   ├── tableaux-a-plusieurs-indices.tex
+│   │   ├── utilisation
+│   │   │   ├── acces-individuel-aux-elements-dun-tableau.tex
+│   │   │   ├── affectation-de-tableaux.tex
+│   │   │   ├── boucle-foreach.tex
+│   │   │   ├── java
+│   │   │   │   ├── Acces.class
+│   │   │   │   ├── Acces.java
+│   │   │   │   ├── Affectation.class
+│   │   │   │   ├── Affectation.java
+│   │   │   │   ├── Affectation.txt
+│   │   │   │   ├── error.txt
+│   │   │   │   ├── ForEach.java
+│   │   │   │   ├── Length.java
+│   │   │   │   └── ParcourirTableau.java
+│   │   │   └── la-taille-dun-tableau.tex
 │   │   └── utilisation.tex
 │   └── theorie.tex
+├── LICENSE
 ├── main.tex
+├── Makefile
+├── README.md
 └── styles
     ├── esi-beamer.sty
     └── images
-        ├── by-sa.pdf
         ├── by.pdf
+        ├── by-sa.pdf
         ├── cc.pdf
         ├── esi-logo.pdf
         ├── preview1.png
