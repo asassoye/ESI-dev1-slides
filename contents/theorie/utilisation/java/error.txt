@@ -1,0 +1,3 @@
+$ javac Acces.java
+$ java Acces
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 15 out of bounds for length 5 at Acces.main(Acces.java:6)
