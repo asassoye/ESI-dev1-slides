@@ -24,7 +24,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesPackage{esi-beamer}[2019/11/11 Andrew SASSOYE v1.2.3]
+\ProvidesPackage{esi-beamer}[2019/11/13 Andrew SASSOYE v1.2.4]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
@@ -68,6 +68,8 @@
 \setbeamercolor{block title alerted}{bg=pomegranate}
 \setbeamercolor{block title example}{bg=concrete}
 
+\newcounter{exercice}
+
 %% Footer style
 \setbeamertemplate{footline}{%
     \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
@@ -101,7 +103,6 @@
 %% Part page style
 \setbeamertemplate{part page}{
 \begin{beamercolorbox}[wd=\paperwidth, center, ht=.50\paperheight, dp=.50\paperheight]{part title}
-    Partie \insertpartnumber\\
     \usebeamerfont{part title}\insertpart\par
 \end{beamercolorbox}
 }
