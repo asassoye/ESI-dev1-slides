@@ -30,7 +30,6 @@ $ make pdf
 │   │   │       ├── TableauEnArgument.java
 │   │   │       └── TableauEnRetour.java
 │   │   ├── tableau-en-argument-ou-en-retour.tex
-│   │   ├── tableaux-a-plusieurs-indices.tex
 │   │   ├── utilisation
 │   │   │   ├── acces-individuel-aux-elements-dun-tableau.tex
 │   │   │   ├── affectation-de-tableaux.tex
