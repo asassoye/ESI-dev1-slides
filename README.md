@@ -10,15 +10,6 @@ $ make pdf
 ```
 .
 ├── contents
-│   ├── exercices
-│   │   ├── declaration-et-creation.tex
-│   │   ├── java
-│   │   │   ├── AlgorithmeInitialisation.java
-│   │   │   └── SyllabusExercice99.java
-│   │   ├── tableau-en-argument-ou-en-retour.tex
-│   │   ├── tableaux-a-plusieurs-indices.tex
-│   │   └── utilisation.tex
-│   ├── exercices.tex
 │   ├── theorie
 │   │   ├── declaration-et-creation
 │   │   │   ├── creation-de-tableaux.tex
@@ -35,6 +26,7 @@ $ make pdf
 │   │   ├── declaration-et-creation.tex
 │   │   ├── tableau-en-argument-ou-en-retour
 │   │   │   └── java
+│   │   │       ├── SyllabusExercice99.java
 │   │   │       ├── TableauEnArgument.java
 │   │   │       └── TableauEnRetour.java
 │   │   ├── tableau-en-argument-ou-en-retour.tex
@@ -49,10 +41,13 @@ $ make pdf
 │   │   │   │   ├── Affectation.class
 │   │   │   │   ├── Affectation.java
 │   │   │   │   ├── Affectation.txt
+│   │   │   │   ├── AlgorithmeInitialisation.java
 │   │   │   │   ├── error.txt
 │   │   │   │   ├── ForEach.java
 │   │   │   │   ├── Length.java
-│   │   │   │   └── ParcourirTableau.java
+│   │   │   │   ├── ParcourirTableau.java
+│   │   │   │   ├── SyllabusExercice100.java
+│   │   │   │   └── SyllabusExercice103.java
 │   │   │   └── la-taille-dun-tableau.tex
 │   │   └── utilisation.tex
 │   └── theorie.tex
@@ -70,4 +65,5 @@ $ make pdf
         ├── preview1.png
         ├── preview2.png
         └── sa.pdf
+
 ```
