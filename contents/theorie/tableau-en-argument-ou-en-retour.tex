@@ -1,7 +1,9 @@
 \begin{frame}{Tableau en argument}
+    \pause
     Reprenons l'exemple précédent. Nous pouvons crée une méthode qui affiche systematiquement tous les noms d'un tableau
     \lstinputlisting[firstline=2, lastline=6, firstnumber=2]{tableau-en-argument-ou-en-retour/java/TableauEnArgument.java}
 
+    \pause
     \begin{alertblock}{Référence au tableau}
         En réalité, on ne transmets pas une copie du tableau à la méthode. On transmet la référence au tableau.
         Concrètement, si on modifie une valeur du tableau dans la méthode,
@@ -10,35 +12,38 @@
 \end{frame}
 
 \begin{frame}{Tableau en retour}
+    \pause
     Comme on peut référencer un tableau en argument d'une méthode,
     nous pouvons aussi renvoyer une référence vers un tableau en retour d'une méthode.
     \lstinputlisting[firstline=2, lastline=4, firstnumber=4]{tableau-en-argument-ou-en-retour/java/TableauEnRetour.java}
 
+    \pause
     \center\tiny On est d'accord, cette méthode ne sert à rien
 \end{frame}
 
 \stepcounter{exercice}
 \begin{frame}[shrink]{Exercice \theexercice}{Syllabus Exercice 99}
+    \pause
     Écrire les entêtes (et uniquement les entêtes)
     des algorithmes qui résolvent les problèmes suivants~:
     \begin{enumerate}
-        \item
+        \item\pause
         Inverser le signe de tous les éléments négatifs dans un tableau d’entiers.
-        \item
+        \item\pause
         Donner le nombre d’éléments négatifs dans un tableau d’entiers.
-        \item
+        \item\pause
         Déterminer si un tableau d’entiers contient au moins un nombre négatif.
-        \item
+        \item\pause
         Déterminer si un tableau de chaines contient
         une chaine donnée en paramètre.
-        \item
+        \item\pause
         Déterminer si un tableau de chaines contient
         au moins deux occurrences de la même chaine,
         quelle qu’elle soit.
-        \item
+        \item\pause
         Retourner un tableau donnant les $n$ premiers nombres premiers,
         où $n$ est un paramètre de l’algorithme.
-        \item
+        \item\pause
         Reçoit un tableau d’entiers
         et retourne un tableau de booléens de la même taille
         où la case $i$ indique si oui ou non
@@ -94,7 +99,7 @@
         et qui retourne un booléen indiquant s’il contient \textbf{au
         moins} une fois la valeur 20.
 
-        \item Écrire un algorithme qui reçoit en paramètre le tableau
+        \item\pause Écrire un algorithme qui reçoit en paramètre le tableau
         $cotes$ de $n$ entiers représentant les cotes des étudiants
         et qui retourne un booléen indiquant s’il contient
         \textbf{exactement} une fois la valeur 20.

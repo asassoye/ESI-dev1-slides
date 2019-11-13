@@ -1,6 +1,9 @@
 \begin{frame}{Syntaxe}
+    \pause
     On peut accéder à une valeur particulière en indiquant l'indice entre crochets.
     \lstinputlisting[firstline=3, lastline=4, firstnumber=3]{java/Acces.java}
+
+    \pause
     \begin{alertblock}{ArrayIndexOutOfBoundsException}
         Si on essaye d'acceder à un indice négatif ou en dehors de la limite du tableau
         \lstinputlisting[firstline=6, lastline=6, firstnumber=6]{java/Acces.java}
@@ -23,14 +26,17 @@
 \end{frame}
 
 \begin{frame}{Exercice \theexercice~- Solution}{Syllabus Exercice 98}
+    \pause
     \begin{block}{\textbf{$tab[i] = tab[i+1]$}}
         Ici, la valeur de $tab[i+1]$ est affecté à $tab[i]$
     \end{block}
 
+    \pause
     \begin{block}{\textbf{$tab[i] = tab[i]+1$}}
         Ici, la valeur de $tab[i]$ est incrémenté puis est affecté à $tab[i]$
     \end{block}
 
+    \pause
     \begin{exampleblock}{Equivalence}
         $tab[i] = tab[i]+1$ reviendrait au meme que de faire
         \begin{itemize}
